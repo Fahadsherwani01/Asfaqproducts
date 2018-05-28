@@ -1,0 +1,93 @@
+@model ICollection<cart>
+@*@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor*@
+
+
+
+
+@*@{int  a=0;}
+
+@{ 
+    ICollection<string> item_keys = HttpContextAccessor.HttpContext.Request.Cookies.Keys;
+}*@
+
+
+<h2>cartitem</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                @*<th>
+
+                    @Html.DisplayNameFor(model => model.URL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.count)
+                </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+   
+        <tr>
+            <td>
+               <img class="img-responsive img-thumbnail" src="@Html.DisplayFor(modelItem => item.URL)"/> 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.count)
+            </td>
+            <td>
+             
+                @*@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+               <a class="btn btn-link delItem" data-key="@item.key">Delete</a>
+              
+            </td>
+        </tr>
+}
+
+        
+    </tbody>
+</table>
+<a class="btn btn-default" href="/project/userForm">CheckOut</a>
+
+
+
+
+
+@section Scripts
+{
+
+    <script>
+        
+
+        $('.delItem').click(function () {
+
+            var srcc = $(this).data("key");
+            window.location.href ="/project/MyCart?key="+srcc;
+
+            alert(srcc);
+            $.ajax({
+                url: "/project/deleteCart",
+                datatype: "text",
+                data: { 'key': srcc },
+                type: "GET",
+                success: function (data) {
+                    location.reload();
+
+                }
+            
+            });
+
+           
+
+            alert(1);
+               
+        });
+       
+        
+    </script>
+
+    }

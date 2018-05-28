@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EAD9113-FF87-4388-B51A-ACFC7CB85D86}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>teremeerbani2</RootNamespace>
+    <AssemblyName>teremeerbani2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\projectController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\cart.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\userInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\add1.css" />
+    <Content Include="Content\add2.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\layoutCheck\css\bootstrap.css" />
+    <Content Include="Content\layoutCheck\css\creditly.css" />
+    <Content Include="Content\layoutCheck\css\easy-responsive-tabs.css" />
+    <Content Include="Content\layoutCheck\css\flexslider.css" />
+    <Content Include="Content\layoutCheck\css\font-awesome.css" />
+    <Content Include="Content\layoutCheck\css\style.css" />
+    <Content Include="Content\layoutCheck\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\layoutCheck\images\1.jpg" />
+    <Content Include="Content\layoutCheck\images\1.png" />
+    <Content Include="Content\layoutCheck\images\10.jpg" />
+    <Content Include="Content\layoutCheck\images\10.png" />
+    <Content Include="Content\layoutCheck\images\11.jpg" />
+    <Content Include="Content\layoutCheck\images\11.png" />
+    <Content Include="Content\layoutCheck\images\12.jpg" />
+    <Content Include="Content\layoutCheck\images\12.png" />
+    <Content Include="Content\layoutCheck\images\13.jpg" />
+    <Content Include="Content\layoutCheck\images\13.png" />
+    <Content Include="Content\layoutCheck\images\14.jpg" />
+    <Content Include="Content\layoutCheck\images\14.png" />
+    <Content Include="Content\layoutCheck\images\15.jpg" />
+    <Content Include="Content\layoutCheck\images\15.png" />
+    <Content Include="Content\layoutCheck\images\16.jpg" />
+    <Content Include="Content\layoutCheck\images\16.png" />
+    <Content Include="Content\layoutCheck\images\17.jpg" />
+    <Content Include="Content\layoutCheck\images\17.png" />
+    <Content Include="Content\layoutCheck\images\18.jpg" />
+    <Content Include="Content\layoutCheck\images\18.png" />
+    <Content Include="Content\layoutCheck\images\19.jpg" />
+    <Content Include="Content\layoutCheck\images\19.png" />
+    <Content Include="Content\layoutCheck\images\2.jpg" />
+    <Content Include="Content\layoutCheck\images\2.png" />
+    <Content Include="Content\layoutCheck\images\20.jpg" />
+    <Content Include="Content\layoutCheck\images\20.png" />
+    <Content Include="Content\layoutCheck\images\21.jpg" />
+    <Content Include="Content\layoutCheck\images\21.png" />
+    <Content Include="Content\layoutCheck\images\22.jpg" />
+    <Content Include="Content\layoutCheck\images\22.png" />
+    <Content Include="Content\layoutCheck\images\23.jpg" />
+    <Content Include="Content\layoutCheck\images\23.png" />
+    <Content Include="Content\layoutCheck\images\24.jpg" />
+    <Content Include="Content\layoutCheck\images\24.png" />
+    <Content Include="Content\layoutCheck\images\25.jpg" />
+    <Content Include="Content\layoutCheck\images\25.png" />
+    <Content Include="Content\layoutCheck\images\26.jpg" />
+    <Content Include="Content\layoutCheck\images\26.png" />
+    <Content Include="Content\layoutCheck\images\27.jpg" />
+    <Content Include="Content\layoutCheck\images\27.png" />
+    <Content Include="Content\layoutCheck\images\28.jpg" />
+    <Content Include="Content\layoutCheck\images\28.png" />
+    <Content Include="Content\layoutCheck\images\29.jpg" />
+    <Content Include="Content\layoutCheck\images\29.png" />
+    <Content Include="Content\layoutCheck\images\3.jpg" />
+    <Content Include="Content\layoutCheck\images\3.png" />
+    <Content Include="Content\layoutCheck\images\30.jpg" />
+    <Content Include="Content\layoutCheck\images\30.png" />
+    <Content Include="Content\layoutCheck\images\31.jpg" />
+    <Content Include="Content\layoutCheck\images\31.png" />
+    <Content Include="Content\layoutCheck\images\32.jpg" />
+    <Content Include="Content\layoutCheck\images\32.png" />
+    <Content Include="Content\layoutCheck\images\33.jpg" />
+    <Content Include="Content\layoutCheck\images\33.png" />
+    <Content Include="Content\layoutCheck\images\34.jpg" />
+    <Content Include="Content\layoutCheck\images\34.png" />
+    <Content Include="Content\layoutCheck\images\35.jpg" />
+    <Content Include="Content\layoutCheck\images\35.png" />
+    <Content Include="Content\layoutCheck\images\36.png" />
+    <Content Include="Content\layoutCheck\images\37.png" />
+    <Content Include="Content\layoutCheck\images\38.png" />
+    <Content Include="Content\layoutCheck\images\39.png" />
+    <Content Include="Content\layoutCheck\images\4.jpg" />
+    <Content Include="Content\layoutCheck\images\4.png" />
+    <Content Include="Content\layoutCheck\images\40.png" />
+    <Content Include="Content\layoutCheck\images\41.png" />
+    <Content Include="Content\layoutCheck\images\42.png" />
+    <Content Include="Content\layoutCheck\images\43.png" />
+    <Content Include="Content\layoutCheck\images\44.png" />
+    <Content Include="Content\layoutCheck\images\45.png" />
+    <Content Include="Content\layoutCheck\images\46.png" />
+    <Content Include="Content\layoutCheck\images\47.png" />
+    <Content Include="Content\layoutCheck\images\48.png" />
+    <Content Include="Content\layoutCheck\images\49.png" />
+    <Content Include="Content\layoutCheck\images\5.jpg" />
+    <Content Include="Content\layoutCheck\images\5.png" />
+    <Content Include="Content\layoutCheck\images\50.png" />
+    <Content Include="Content\layoutCheck\images\51.png" />
+    <Content Include="Content\layoutCheck\images\52.png" />
+    <Content Include="Content\layoutCheck\images\53.png" />
+    <Content Include="Content\layoutCheck\images\54.png" />
+    <Content Include="Content\layoutCheck\images\55.png" />
+    <Content Include="Content\layoutCheck\images\56.png" />
+    <Content Include="Content\layoutCheck\images\57.png" />
+    <Content Include="Content\layoutCheck\images\58.png" />
+    <Content Include="Content\layoutCheck\images\59.png" />
+    <Content Include="Content\layoutCheck\images\6.jpg" />
+    <Content Include="Content\layoutCheck\images\6.png" />
+    <Content Include="Content\layoutCheck\images\60.png" />
+    <Content Include="Content\layoutCheck\images\61.png" />
+    <Content Include="Content\layoutCheck\images\62.png" />
+    <Content Include="Content\layoutCheck\images\63.png" />
+    <Content Include="Content\layoutCheck\images\64.png" />
+    <Content Include="Content\layoutCheck\images\65.png" />
+    <Content Include="Content\layoutCheck\images\66.png" />
+    <Content Include="Content\layoutCheck\images\67.png" />
+    <Content Include="Content\layoutCheck\images\68.png" />
+    <Content Include="Content\layoutCheck\images\69.png" />
+    <Content Include="Content\layoutCheck\images\7.jpg" />
+    <Content Include="Content\layoutCheck\images\7.png" />
+    <Content Include="Content\layoutCheck\images\70.png" />
+    <Content Include="Content\layoutCheck\images\71.png" />
+    <Content Include="Content\layoutCheck\images\72.png" />
+    <Content Include="Content\layoutCheck\images\73.png" />
+    <Content Include="Content\layoutCheck\images\74.png" />
+    <Content Include="Content\layoutCheck\images\75.png" />
+    <Content Include="Content\layoutCheck\images\76.png" />
+    <Content Include="Content\layoutCheck\images\8.jpg" />
+    <Content Include="Content\layoutCheck\images\8.png" />
+    <Content Include="Content\layoutCheck\images\9.jpg" />
+    <Content Include="Content\layoutCheck\images\9.png" />
+    <Content Include="Content\layoutCheck\images\arrow.png" />
+    <Content Include="Content\layoutCheck\images\card.png" />
+    <Content Include="Content\layoutCheck\images\cart.png" />
+    <Content Include="Content\layoutCheck\images\close_1.png" />
+    <Content Include="Content\layoutCheck\images\img-sp.png" />
+    <Content Include="Content\layoutCheck\images\offer.png" />
+    <Content Include="Content\layoutCheck\images\paypal.png" />
+    <Content Include="Content\layoutCheck\images\star.png" />
+    <Content Include="Content\layoutCheck\images\star1.png" />
+    <Content Include="Content\layoutCheck\images\tag.png" />
+    <Content Include="Content\layoutCheck\js\bootstrap.min.js" />
+    <Content Include="Content\layoutCheck\js\counterup.min.js" />
+    <Content Include="Content\layoutCheck\js\creditly.js" />
+    <Content Include="Content\layoutCheck\js\easing.js" />
+    <Content Include="Content\layoutCheck\js\easyResponsiveTabs.js" />
+    <Content Include="Content\layoutCheck\js\jquery-1.11.1.min.js" />
+    <Content Include="Content\layoutCheck\js\jquery.flexslider.js" />
+    <Content Include="Content\layoutCheck\js\jquery.wmuSlider.js" />
+    <Content Include="Content\layoutCheck\js\minicart.js" />
+    <Content Include="Content\layoutCheck\js\move-top.js" />
+    <Content Include="Content\layoutCheck\js\okzoom.js" />
+    <Content Include="Content\layoutCheck\js\waypoints.min.js" />
+    <Content Include="Content\myfile.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Images\08.JPG" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4 %281%29.jpg" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419075075-RB-7701.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419075076-RB-7701.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419077196-RB-712.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419228217-RB-7766.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419228219-RB-7766.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419228221-RB-7766.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419231466-RB-21-A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419231467-RB-21-A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers-1419231468-RB-21-A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers1425619943-19.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers1425619944-19.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticle-nippers1425619945-19.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTICLEE SCISSORS\cuticlee-scissors1433235411-P-1314.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NAIL SCISSORS\cuticle-nippers-1419228217-RB-7766.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NAIL SCISSORS\cuticle-nippers-1419228219-RB-7766.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NAIL SCISSORS\cuticle-nippers-1419228221-RB-7766.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NAIL SCISSORS\cuticle-nippers-1419231466-RB-21-A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NAIL SCISSORS\cuticle-nippers-1419231467-RB-21-A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NAIL SCISSORS\cuticle-nippers-1419231468-RB-21-A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-101435134048-P-1401 P-1402.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435134114-P-1403 P-1404.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435217606-P-1449 copy.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435295894-P-1448.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435296018-P-1450.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435296307-P-1453.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435296418-P-1454.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435296837-P-1455.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435297143-P-1456.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435297342-P-1456.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435297785-P-1457.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435298181-P-1458.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435298229-P-1459.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435298295-P-1460.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper-10cm1435298579-P-1464 P-1465.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435134343-P-1409 P-1410.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435134763-P-1411 P-1412.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435134924-P-1415 P-1416.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435134976-P-1417 P-1418.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435135093-P-1419 P-1420.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435135306-P-1423 P-1424.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435135401-P-1425 P-1426.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435135479-P-1427 P-1428.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435135614-P-1429 P-1430.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435135670-P-1431 P-1432.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435136433-P-1433 P-1434 copy.JPG" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435136760-P-1435 P-1436.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper10cm1435136993-P-1437 P-1438.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper1435134174-P-1405 P-1406.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\CUTTICLE NIPPER\cutticle-nipper1435134272-P-1407 P-1408.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\HAIR CUTTING SCISSORS PVC COATED\cutticle-nipper-101435134048-P-1401 P-1402.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\HAIR CUTTING SCISSORS PVC COATED\cutticle-nipper1435134174-P-1405 P-1406.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\HAIR CUTTING SCISSORS PVC COATED\cutticle-nipper1435134272-P-1407 P-1408.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\HAIR CUTTING SCISSORS PVC COATED\hair-cutting-scissors-pvc-coated1433147508-P-1157-58.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\HAIR CUTTING SCISSORS PVC COATED\hair-cutting-shears-1418721265-RB-221.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\HAIR CUTTING SCISSORS PVC COATED\hair-cutting-shears-1418721397-RB-221.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-&amp;-foot-files-1424780986-1.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999125-P-1807.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999409-P-1808.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999545-P-1809.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999610-P-1810.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999653-P-1811.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999695-P-1826.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999868-P-1827.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1435999955-P-1829.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1436000016-P-1830.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1436000056-P-1831.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1436000089-P-1832.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-and-foot-file-1436000144-P-1833.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-artist-tweezer-1436000313-P-1777.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-artist-tweezer-1436000338-P-1778.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-artist-tweezer-1436000484-P-1780.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-artist-tweezer-1436000560-P-1781.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-artist-tweezer-1436000743-P-1783.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-diamond-file-plastic-cover1424781400-7.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-file1419311276-RB-850 A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-file1419311277-RB-850 A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\NAIL AND FOOT FILE\nail-file1419311278-RB-850 A.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\-professional-razor-sharp-shears1432972556-P-1015.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432971690-P-1001 1002.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432972125-P-1003 1004.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432972257-P-1007 1008.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432974451-P-1031.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432974510-P-1032.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432974552-P-1033 P-1034.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432974596-P-1035 P-1036.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432974652-P-1037 P-1038.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1432976704-P-1055 P-1056.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433145489-P-1057 P-1058.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433145555-P-1059 P-1060.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433145613-P-1061 P-1062.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433145627-P-1059 P-1060.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433145675-P-1063-64.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433145739-P-1065-66 copy.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433145852-P-1067-68.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433146003-P-1071-72.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433146133-P-1073-74 copy.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\professional-razor-sharp-shears1433146446-P-1079-80.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\proffesional-thinning-&amp;-blending-shears1433146606-P-1135-36.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFESSIONAL RAZOR SHARP SHEARS\proffesional-thinning-&amp;-blending-shears1433146820-P-1139-40.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\PROFFESIONAL THINNING &amp; BLENDING SHEARS\professional-thining-&amp;-blending-shears1424843668-1.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\disposable-shaving-razor1419313577-RB-569-C.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-&amp;-thinning-razors-1419313158-RB-567.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-and-thining-razors1435133093-P-1852.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-and-thining-razors1435133139-P-1853.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-and-thining-razors1435133186-P-1854.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-and-thining-razors1435133298-P-1856.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-and-thining-razors1435133346-P-1857.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-and-thining-razors1435133411-P-1858.jpg" />
+    <Content Include="Images\BEAUTY_INSTRUMENT\SHAVING AND THINING RAZORS\shaving-razor,plastic-handle1419312034-RB-561.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\AMALGAM CARRIERS\amalgam-carriers1438263902-15.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\AMALGAM CARRIERS\jambo1438263217-7.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\AMALGAM CARRIERS\large1438262573-3.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\AMALGAM CARRIERS\metal-tip-for-1859-1860-18611438260789-9.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\AMALGAM CARRIERS\metal-tip-for-1859-1860-18611438260870-10.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\AMALGAM CARRIERS\metal-tip-for-1859-1860-18611438263517-10.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\AMALGAM CARVER\amalgam-carver1438261161-1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\BONE FILES\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\BONE FILES\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\BONE RONGEURS\goldman-fox1438258880-5.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\BONE RONGEURS\goldman-fox1438259058-7.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\BONE RONGEURS\goldmann-fox1436616071-293-13.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\BONE RONGEURS\mead-1a1438258805-4.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\BONE RONGEURS\mini-ruskin1438259464-10.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CAVITY PREPARATION INSTRUMENTS\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CAVITY PREPARATION INSTRUMENTS\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CEMENT SPATULAS\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CEMENT SPATULAS\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\COMBINATION EXPLORERS-PROBES\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\COMBINATION EXPLORERS-PROBES\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CROWN INSTRUMENTS\crown-instruments1438169533-15.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CROWN INSTRUMENTS\crown-spreader1438083686-3.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CROWN INSTRUMENTS\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\CROWN INSTRUMENTS\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\DENTAL SCISSORS\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\DENTAL SCISSORS\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\DOUBLE ENDED\double-ended-1437555787-EI-02-1901.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\DOUBLE ENDED\double-ended1437557401-EI-02-1909.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\DOUBLE ENDED\double-ended1437557707-EI-02-1910.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\DOUBLE ENDED\double-ended1437557832-EI-02-1911.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814193-EI-02-2101.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814251-EI-02-2102.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814281-EI-02-2103.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814311-EI-02-2104.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814352-EI-02-2105.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814446-EI-02-2107.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814473-EI-02-2108.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814538-EI-02-2109.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814570-EI-02-2110.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814749-EI-02-2111.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814789-EI-02-2112.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814815-EI-02-2113.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ENDODONTIC INSTRUMENTS\endodontic-instruments1437814849-EI-02-2114.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXCAVATORS\excavators1437812812-EI-02-2301.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXCAVATORS\excavators1437812872-EI-02-2302.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXCAVATORS\excavators1437812901-EI-02-2303.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXCAVATORS\excavators1437812951-EI-02-2304.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXCAVATORS\excavators1437813007-EI-02-2305.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXCAVATORS\excavators1437814016-EI-02-2307.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809012-EI-02-2702.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809074-EI-02-2704.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809155-EI-02-2706.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809224-EI-02-2707.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809286-EI-02-2708.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809335-EI-02-2709.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809435-EI-02-2710.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809473-EI-02-2711.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809508-EI-02-2712.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers-anatomic-handle1437809657-EI-02-2714.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437809770-EI-02-2501.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437809823-EI-02-2502.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437811279-EI-02-2504.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437811396-EI-02-2506.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437811427-EI-02-2507.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437811565-EI-02-2510.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437811643-EI-02-2511.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS ANATOMIC HANDLE\explorers1437812467-EI-02-2512.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS\combination-explorers-probes1438172087-10.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXPLORERS\explorers-anatomic-handle1437808969-EI-02-2701.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437803734-EI-02-2901 fig.1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437803804-EI-02-2902 fig.13.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437803870-EI-02-2903 fig.145.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437804068-EI-02-2904 FIG. 151 1-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437804297-EI-02-2905 fig.17.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437804565-EI-02-2907.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437804651-EI-02-2909.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437804687-EI-02-2910.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437804733-EI-02-2911.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\EXTRACTING FORCEPS\extracting-forceps1437804766-EI-02-2912.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437739641-EI-02-3101.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437739702-EI-02-3102.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437739730-EI-02-3103.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437739801-EI-02-3104.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437740555-EI-02-3105.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437741120-EI-02-3106.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437741185-EI-02-3107.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437743895-EI-02-3108.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437803217-EI-02-3109.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437803391-EI-02-3112.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437803445-EI-02-3113.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\FILLING INSTRUMENTS\filling-instruments1437803491-EI-02-3114.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437645946-EI-02-3301.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437646027-EI-02-3302.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437646071-EI-02-3303.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437646445-EI-02-3304.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437646479-EI-02-3305.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437651892-EI-02-3307.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437651923-EI-02-3308.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437652018-EI-02-3309.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\GRACEY CURRETTERS\gracey-curretters1437652057-EI-02-3310.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645104-EI-02-3501.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645392-EI-02-3502.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645471-EI-02-3503.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645512-EI-02-3504.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645587-EI-02-3505.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645665-EI-02-3506.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645702-EI-02-3507.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\HEIDEMANN SPARATING SPATULAS\heidemann-sparating-spatulas1437645790-EI-02-3509.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437642790-EI-02-3701.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437642860-EI-02-3702.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643011-EI-02-3703.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643118-EI-02-3704.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643253-EI-02-3705.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643449-EI-02-3712.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643535-EI-02-3713.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643575-EI-02-3714.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643647-EI-02-3716.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643892-EI-02-3727.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643936-EI-02-3728.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437643997-EI-02-3729.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437644079-EI-02-3730.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437644151-EI-02-3731.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437644206-EI-02-3732.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437644382-EI-02-3733.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437644425-EI-02-3743.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\IMPLANT SURGERY\implant-surgery1437644462-EI-02-3744.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642112-EI-02-3901.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642186-EI-02-3903.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642294-EI-02-3904.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642332-EI-02-3905.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642420-EI-02-3906.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642453-EI-02-3907.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642535-EI-02-3908.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY INSTRUMENTS\laboratiry-instruments1437642593-EI-02-3909.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641397-EI-02-4101.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641447-EI-02-4102.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641706-EI-02-4103.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641776-EI-02-4104.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641812-EI-02-4105.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641844-EI-02-4106.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641879-EI-02-4107.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\LABORATIRY TWEEZERS\laboratiry-tweezers1437641923-EI-02-4108.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\MATRIX RETAINERS\matrix-retainers1437640990-EI-02-4302.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\MATRIX RETAINERS\matrix-retainers1437641076-EI-02-4303.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\MATRIX RETAINERS\matrix-retainers1437641175-EI-02-4304.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437637813-EI-02-4501.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437637873-EI-02-4502.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437638008-EI-02-4503.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437638682-EI-02-4508.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437638774-EI-02-4510.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437638816-EI-02-4511.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437638900-EI-02-4512.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437638948-EI-02-4513.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437639004-EI-02-4514.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437639036-EI-02-4515.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437639921-EI-02-4516.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437640042-EI-02-4518.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437640143-EI-02-4519.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437640234-EI-02-4520.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437640277-EI-02-4521.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437640351-EI-02-4522.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437640410-EI-02-4523.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\NEEDLE HOLDERS\needle-holders1437640503-EI-02-4524.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601027-EI-02-4701.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601028-EI-02-4701.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601032-EI-02-4701.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601033-EI-02-4701.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601076-EI-02-4702.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601120-EI-02-4704.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601148-EI-02-4705.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601202-EI-02-4706.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodonral-instruments1436601225-EI-02-4707.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTAL INSTRUMENTS\periodontal-instruments1436600802-EI-02-4901.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTIAL POCKET PROBES\periodontial-pocket-probes1436600514-EI-02-5101.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PERIODONTIAL POCKET PROBES\periodontial-pocket-probes1436600575-EI-02-5102.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PLASTER ALGINATE &amp; EEASTOMERSI\plaster-alginate-&amp;-eeastomersi1436600051-EI-02-5302.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PLIERS\pliers1437631950-EI-02-5501.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PLIERS\pliers1437632010-EI-02-5502.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PLIERS\pliers1437637076-EI-02-5504.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PLIERS\pliers1437637130-EI-02-5505.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PLIERS\pliers1437637237-EI-02-5506.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\PLIERS\pliers1437637282-EI-02-5507.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors-tongue-depressors1436599737-EI-02-5902.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors-tongue-depressors1436599738-EI-02-5902.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors-tongue-depressors1436599795-EI-02-5903.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors-tongue-depressors1436599860-EI-02-5904.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors1437558969-EI-02-5701.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors1437631525-EI-02-5702.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors1437631601-EI-02-5704.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors1437631649-EI-02-5705.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS - TONGUE DEPRESSORS\retractors1437631860-EI-02-5707.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RETRACTORS\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT ELEVATORS\crown-spreaders1438084727-6.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT ELEVATORS\curved-furrer1438077392-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602267-1 ROOT-TIP PICKS FIG. 1 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602268-1 ROOT-TIP PICKS FIG. 1 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602269-1 ROOT-TIP PICKS FIG. 1 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602270-1 ROOT-TIP PICKS FIG. 1 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602271-1 ROOT-TIP PICKS FIG. 1 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602332-3 FIG. 2 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602350-4 FIG.2 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602389-5 FIG. 3 HEIDBRINK.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602419-6 ROOT-TIP PICKS.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602437-7 FIG. WARWICK-JAMES.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602458-8 FIG . 2 WARWICK-JAMES.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\ROOT-TIP PICKS\root-tip-picks1436602486-9 FIG . 3 WARWICK-JAMES.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\RUBBER DAM CLAMPS\rubber-dam-clumps1436598316-LABIAL CLAMP.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SAW &amp; BLADES\saw-&amp;-blades1436597870-SAW FOR MODELS CM 18.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601502-1 SCALER SET.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601535-2 SCALERS FIG. 1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601536-2 SCALERS FIG. 1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601537-2 SCALERS FIG. 1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601538-2 SCALERS FIG. 1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601544-2 SCALERS FIG. 1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601551-2 SCALERS FIG. 1.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601592-3 SCALERS FIG. 1-2.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601625-4 SCALERS FIG. 1L SINISTRO LEFT.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601654-5 SCALERS FIG. 1R DESTRO RIGHT.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601783-6 SCALERS FIG. 2L SINISTRO LEFT.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601844-7 SCALERS FIG. 2R DESTRO RIGHT.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601885-8 SCALERS FIG. 33.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601924-9 SCALERS FIG. H5 HYGLENIST.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436601958-10 SCALERS FIG. H5-33.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436602003-11 SCALERS FIG. H6 HYGIENIST.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436602057-13 SCALERS FIG. M23 UNIVERSAL SCALER.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436602079-14 SCALERS FIG. U15-30 TOWNER JACQUETTE.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALERS\scalers1436602112-15 SCALERS FIG. U15-33 TOWNER JACQUETTE.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALPE HANDLES\scalpe-handles,-blades1436596607-1 SCALPE HANDLES, BLADES FIG . 7.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALPE HANDLES\scalpe-handles,-blades1436596608-1 SCALPE HANDLES, BLADES FIG . 7.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALPE HANDLES\scalpe-handles,-blades1436596678-2 SCALPE HANDLES, BLADES FIG . 8.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALPE HANDLES\scalpe-handles,-blades1436596696-3 SCALPE HANDLES, BLADES FIG 3.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SCALPE HANDLES\scalpe-handles,-blades1436596708-4 SCALPE HANDLES, BLADES FIG . 3G.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SURGICAL SALIVA EJECTORS\surgical-saliva-ejectors1436596906-1 SURGICAL SALIVA EJECTOR CM 18- #U00c3#U02dc 3MM.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SURGICAL SALIVA EJECTORS\surgical-saliva-ejectors1436596907-1 SURGICAL SALIVA EJECTOR CM 18- #U00c3#U02dc 3MM.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SURGICAL SALIVA EJECTORS\surgical-saliva-ejectors1436596908-1 SURGICAL SALIVA EJECTOR CM 18- #U00c3#U02dc 3MM.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SURGICAL SALIVA EJECTORS\surgical-saliva-ejectors1436597423-3 SURGICAL SALIVA EJECTOR CM 18- #U00c3#U02dc 5MM.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\SYRINGES\dental-syringes1436596789-1 SPARE CAP WITH METRIC HEAD CORK SCREW TIP.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\TOWEL CLAMPS\towel-clamps1436596009-1 TOWEL CLAMP BACKHAUS CM 8.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\TRAYS\trays1436596391-2ALUMINUM COLOR-COD.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\TRAYS\trays1436596427-3INSERT FRAMES FOR 10 INSTRUMENTs.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\TRAYS\trays1436596453-4INSERT FRAMES FOR 11 INSTRUMENTS.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\TRAYS\trays1436596481-5 ALUMINUM COLOR-COD.jpg" />
+    <Content Include="Images\DENTAL_INSTRUMENTS\WAX and MODELING CARVES\wax-&amp;-modeling-carves1436596222-1 WAX &amp; MODELLING CARVERS FIG.1 &amp; 2 HOLLENBACK.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\foregger1433830190-11.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\guedel-negus1433829857-5.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\guedel-negus1433829889-6.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\guedel-negus1433830103-7.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\magill1433829710-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\mcintosh1433830259-16.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\mcintosh1433830328-8.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\mcintosh1433830362-10.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\mcintosh1433830386-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\millar-baby1433829772-3.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\miller1433829745-2.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\ANESTHESIA\miller1433829812-4.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\DIAGNOSTIC\percussion-hammer1433829298-01.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\DIAGNOSTIC\percussion-hammer1433829336-02.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\DIAGNOSTIC\percussion-hammer1433829359-03.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\DIAGNOSTIC\percussion-hammer1433829393-04.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\DIAGNOSTIC\percussion-hammer1433829425-05.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\DIAGNOSTIC\stethoscope1433829469-06.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\cusco1433834689-101.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\cusco1433834697-101.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\cusco1433834729-102.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\cusco1433834749-103.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\kristeller1433834966-110.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\kristeller1433834985-111.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\kristeller1433835004-112.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\kristeller1433835027-113.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\kristeller1433835067-113-A.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\pederson1433834848-106.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\semm1433834909-108.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\GYECOLOGY\sims1435298978-220-23.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\obtetics\kristeller1433835004-112.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\obtetics\kristeller1433835067-113-A.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\obtetics\pederson1433834848-106.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\obtetics\semm1433834909-108.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\obtetics\sims1435298978-220-23.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435057168-2.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435059650-8.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435059749-9.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435130595-15.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435130758-16.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435131244-18.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435131537-19.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435132754-20.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalple1435133084-28.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\scalples1435056898-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\virchow1435059570-5.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\walb1435057685-3.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCALPLES\walb1435059483-4.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\-cutticle-nail-scissors1435997191-P-1341.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\-hair-cutting-scissors-pvc-coated1435556267-P-1147-48.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\-hair-cutting-scissors-pvc-coated1435556476-P-1153-54.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\-hair-cutting-scissors-pvc-coated1435557218-P-1167-68.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticle-scissors1424844162-2.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticle-scissors1424844164-2.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticle-scissors1424844165-2.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticle-scissors1424844166-2.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticle-scissors1424844168-2.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors-1433233477-P-1304.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433232994-P-1301.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433233290-P-1303.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433233590-P-1305.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433233694-P-1306.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433233942-P-1307.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433234103-P-1308.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433234218-P-1309.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433234340-P-1310.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433234428-P-1311.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433235262-P-1312.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433235311-P-1313.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433235411-P-1314.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433235537-P-1315.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433235619-P-1316.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433236351-P-1319.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433236462-P-1320.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433236588-P-1319.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433236758-P-1322.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors1433236978-P-1326.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\cuticlee-scissors`1433237061-P-1327.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-%28half-gold%291424842845-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-%28half-gold%291424842846-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-1419061706-RB-263.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-1419061707-RB-263.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-1419061709-RB-263.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1425013673-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1425013674-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1425013675-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1425014482-7.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147026-P-1141-42.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147091-P-1143-44.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147146-P-1145-46.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147201-P-1147-48.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147314-P-1151-52.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147387-P-1153-54.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147445-P-1155-56.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147508-P-1157-58.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147628-P-1161-62.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147767-P-1165-66.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433147826-P-1167-68.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433148011-P-1169-70.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433148125-P-1171-72.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433148209-P-1173-74.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433148291-P-1175-76.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1433148358-p-1177-78.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1435299095-P-1141-42.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\hair-cutting-scissors-pvc-coated1435299204-P-1145-46.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419066992-RB-603.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067019-RB-605.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067277-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067279-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067281-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067282-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067283-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067284-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067285-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067286-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067287-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067288-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067289-RB-621.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419067496-RB-623.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419069223-RB-6607.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419069224-RB-6607.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419069225-RB-6607.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419069226-RB-6607.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419069231-RB-6607.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\manicure-&amp;-pedicure-scissors-1419069320-RB-6607.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\plastic-handle-hair-cutting-scissors1419062683-RB-294.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\plastic-handle-hair-cutting-scissors1419062932-RB-340.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\plastic-handle-hair-cutting-scissors1419063081-RB-340.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\safety-scissors1424844103-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\safety-scissors1424844105-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\safety-scissors1424844106-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\safety-scissors1424844107-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\safety-scissors1424844108-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\safety-scissors1424844111-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435212562-201-13.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435212637-202-13.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435212716-204-13.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435212761-205-13.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435212817-206-13.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435212890-207-13.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435218350-208-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1435233317-209-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436598667-234-15.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436600825-251-11.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436601656-257-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436602210-261-19.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436602376-262-24.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436603138-266-25.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436603210-267-45.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436603286-268-60.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436603402-269-90.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436604155-273-45.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436604898-274-90.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436616247-295-12.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1436616579-297-11.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1437553336-300-08.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1437553576-301-10.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1437553730-303-10.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\scissors1437553803-304-09.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\thinning-&amp;-blending-scissors1419063963-RB-317.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SCISSORS\thinning-&amp;-blending-scissors1419063964-RB-317.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\flat-dish1435555925-104.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\flat-dish1435556496-108.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\irrigator1435395993-101.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\lid-only1435556017-105.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\measurer1435556570-109.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\measurer1435556681-110.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\petri-dish1435557202-111.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\petri-dish1435557282-112.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\round-bowl1435396453-102.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\round-bowl1435396570-103.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\round-dish1435556402-107.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\STERILIZATION\stainless-steel1435556205-106.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\barraquer1435565956-10.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\brown1435998412-45.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\derf1435996342-26.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\finochietto1435999946-49.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\gillies1436000339-54.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\halsey1435996749-29.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\heaney1435998486-46.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\hegar-baumgartner1435997547-31.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\jameson1436601939-259-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\jameson1436602058-260-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\johnson1436000128-51.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\kalt1435565421-5.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\m.-g.-hospital1435998087-42.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\masson1435999666-48.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-blaps1436258843-107.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-blaps1436258896-108.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-harrington1435297814-214-22.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-hegar1435998190-43.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-hegar1435998325-44.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-noble1435298871-219-17.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-stille1435298319-216-15.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-stille1435298428-217-19.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo-stille1435298510-218-16.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo1435295951-211-15.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\mayo1435297374-212-23.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum-fino1436599466-243-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum-fino1436599774-245-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum-fino1436599916-246-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum-fino1436600317-247-18.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum-fino1436600501-248-18.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum-nelson1436598485-231-20.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum-nelson1436598564-232-20.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum1435304154-227-11.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum1435997988-41.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\metzenbaum1436598606-233-14.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\olsen-hegar1436000275-53.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\stratte1436000194-52.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\toennis-adson1436605499-277-17.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\SUTURE\webster1435996637-28.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\iterson1436171342-102.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\jackson1436172355-107.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\luer-korte1436259217-112.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\luer1436171634-104.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\lupsns1436172125-106.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\rose1436171407-103.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\tracheal-hook1436171819-105.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TRACHEOTOMY\uecpsrmann1436171275-101.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\frazier1436247579-5.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\lichtwitz1436173827-3.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\poole1436248569-12.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\poppen1436248042-7.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\quinps1436248768-16.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\surgical-saliva-ejectors-frazier1436597520-4 SURGICAL SALIVA EJECTOR FRAZIER CM 15- #U00c3#U02dc 4MM.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\surgical-saliva-ejectors-frazier1fig.-8-fr1436.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\universal1436173246-1.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\yankauer1436248362-10.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\TROCARS\yankauer1436248459-11.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\UROLOGY\desjardins1436259060-110.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\UROLOGY\desjardins1436259112-111.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\UROLOGY\elsasser1436258338-104.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\UROLOGY\mixter1436258972-109.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\UROLOGY\randall1436249577-101.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\UROLOGY\randall1436258081-102.jpg" />
+    <Content Include="Images\SURGICAL_INSTRUMENTS\UROLOGY\young1436259337-114.jpg" />
+    <Content Include="ReleaseNotes.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\layoutCheck\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\layoutCheck\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\layoutCheck\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\layoutCheck\fonts\FontAwesome.otf" />
+    <Content Include="Content\layoutCheck\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\layoutCheck\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\project\cartitem.cshtml" />
+    <Content Include="Views\project\showdata.cshtml" />
+    <Content Include="Views\project\showdata2.cshtml" />
+    <Content Include="Views\project\showdata3.cshtml" />
+    <Content Include="Views\project\UPDATE.cshtml" />
+    <Content Include="Views\project\userForm.cshtml" />
+    <Content Include="Views\project\zoom.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\chooseus.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\policy.cshtml" />
+    <Content Include="Views\Home\terms.cshtml" />
+    <Content Include="Views\Home\layoutCheck.cshtml" />
+    <Content Include="Views\Home\zoomer.cshtml" />
+    <Content Include="Views\project\ZoomCheck.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\BEAUTY_INSTRUMENT\COMMON SCISSORS\" />
+    <Folder Include="Images\BEAUTY_INSTRUMENT\NAIL ARTIST TWEEZER\" />
+    <Folder Include="Images\SURGICAL_INSTRUMENTS\OBSTETICS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58785</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58785/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

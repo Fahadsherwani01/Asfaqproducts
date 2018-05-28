@@ -1,0 +1,17 @@
+﻿<img id="img" src="~/DENTAL_INSTRUMENTS/AMALGAM CARRIERS/jambo1438263217-7.jpg" />
+
+@section Scripts{
+    <script>
+       
+        $(document).ready(function () {
+            $('img').zoom({
+
+                url: '~/DENTAL_INSTRUMENTS/AMALGAM CARRIERS/jambo1438263217-7.jpg',
+                callback: function () {
+                    $(this).colorbox({ href: this.src });
+                }
+               alert("hello");
+            });
+        });
+    </script>
+}

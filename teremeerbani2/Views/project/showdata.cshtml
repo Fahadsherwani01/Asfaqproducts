@@ -1,0 +1,68 @@
+﻿
+@model IEnumerable<string>
+
+
+
+
+
+
+
+
+
+    <div class="top-brands">
+        <div>
+            <h3>@ViewBag.name</h3>
+            <div class="agile_top_brands_grids">
+
+
+                @foreach (string item in Model)
+                {
+
+                    <div class="col-md-4 top_brand_left">
+                        <div class="hover14 column">
+                            <div class="agile_top_brand_left_grid">
+
+                                <div class="agile_top_brand_left_grid1">
+                                    <figure>
+                                        <div class="snipcart-item block">
+                                            <div class="snipcart-thumb">
+                                              
+                                                <a href="/project/ZoomCheck?url=SURGICAL_INSTRUMENTS&name=@ViewBag.name&item=@item"><img title=" " alt=" " src="~/Images/SURGICAL_INSTRUMENTS/@ViewBag.name/@item" class="img-responsive" /></a>
+                                                
+                                                @{
+                                                    string name = item;
+                                                    string[] r_name = name.Split('1');
+                                                    
+                                                    <p>@r_name[0]</p>
+                                                }
+                                                
+                                               
+                                            </div>
+                                            <div class="snipcart-details top_brand_home_details">
+                                            
+                                                        <input type="button"  data-toggle="modal" data-target="#myModal" data-name="@r_name[0]" name="submit"  data-url="/Images/SURGICAL_INSTRUMENTS/@ViewBag.name/@item" value="Add to cart" class="button delbtn" />
+                                                  
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+
+
+                
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //flexSlider -->
+
+<div class="clearfix"></div>
+
+
+
+

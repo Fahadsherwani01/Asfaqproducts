@@ -1,0 +1,1001 @@
+﻿@{ 
+    Layout = null;
+}
+
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/Content/layoutCheck/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/layoutCheck/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- font-awesome icons -->
+    <link href="~/Content/layoutCheck/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="~/Content/layoutCheck/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <script src='~/Content/layoutCheck/js/okzoom.js'></script>
+    <script>
+        $(function () {
+            $('#example').okzoom({
+                width: 150,
+                height: 150,
+                border: "1px solid black",
+                shadow: "0 0 5px #000"
+            });
+        });
+    </script>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="~/Content/layoutCheck/js/move-top.js"></script>
+    <script type="text/javascript" src="~/Content/layoutCheck/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+</head>
+
+<body>
+    <!-- header -->
+    <div class="agileits_header">
+        <div class="w3l_offers">
+            <a href="products.html">Today's special Offers !</a>
+        </div>
+        <div class="w3l_search">
+            <form action="#" method="post">
+                <input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+                <input type="submit" value=" ">
+            </form>
+        </div>
+        <div class="product_list_header">
+            <form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="View your cart" class="button" />
+                </fieldset>
+            </form>
+        </div>
+        <div class="w3l_header_right">
+            <ul>
+                <li class="dropdown profile_details_drop">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+                   
+                </li>
+            </ul>
+        </div>
+        <div class="w3l_header_right1">
+            <h2><a href="/home/contact">Contact Us</a></h2>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+
+
+
+
+
+    <div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+
+                    <img src="~/Images/1.jpg" alt="Visual Studio" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p>
+                                There are powerful new features in Visual Studio for building modern web apps.
+                                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                                    Learn More
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+
+                <div class="item">
+                    <img src="~/Images/3.jpg" alt="Package Management" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p>
+                                Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
+                                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+                                    Learn More
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+                <div class="item">
+                    <img src="~/Images/4 (1).jpg" alt="Microsoft Azure" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p>
+                                Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                                    Learn More
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+                <div class="item">
+                    <img src="~/Images/6.jpg" alt="Microsoft Azure" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p>
+                                Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                                    Learn More
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+                <div class="item">
+
+                    <img src="~/Images/08.JPG" alt="Microsoft Azure" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p>
+                                Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                                    Learn More
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- script-for sticky-nav -->
+    <script>
+        $(document).ready(function () {
+            var navoffeset = $(".agileits_header").offset().top;
+            $(window).scroll(function () {
+                var scrollpos = $(window).scrollTop();
+                if (scrollpos >= navoffeset) {
+                    $(".agileits_header").addClass("fixed");
+                } else {
+                    $(".agileits_header").removeClass("fixed");
+                }
+            });
+
+        });
+    </script>
+    <!-- //script-for sticky-nav -->
+    <div class="logo_products">
+        <div class="container">
+            <div class="w3ls_logo_products_left">
+                <h1><a href="index.html"><span>Metal</span> Store</a></h1>
+            </div>
+            <div class="w3ls_logo_products_left1">
+                <ul class="special_items">
+                    <li><a href="/Home/chooseus">Services</a><i>/</i></li>
+                    <li><a href="/Home/About">About Us</a><i>/</i></li>
+                    <li><a href="/Home/policy">Policy</a><i>/</i></li>
+                    <li><a href="/Home/Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="w3ls_logo_products_left1">
+                <ul class="phone_email">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>(+92303) 8585 987</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="">ashfaqproducts09@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- products-breadcrumb -->
+    <div class="products-breadcrumb">
+        <div class="container">
+            <ul>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- //products-breadcrumb -->
+    <!-- banner -->
+    <div class="banner">
+        <div class=" col-md-3">
+            <nav class="navbar nav_bottom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <ul class="nav navbar-nav nav_1">
+                        <li><a href="products.html">Home</a></li>
+
+                        <li class="dropdown mega-dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SURGICAL INSTR.<span class="caret"></span></a>
+                            <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                                <div class="w3ls_vegetables">
+                                    <ul>
+                                        <li><a href="/project/showdata?name=ANESTHESIA">Anesthesia</a></li>
+                                        <li><a href="/project/showdata?name=DIAGNOSTIC">Diagnostics</a></li>
+                                        <li><a href="/project/showdata?name=GYECOLOGY">Gynescology</a></li>
+                                        <li><a href="/project/showdata?name=obtetics">Obstetics</a></li>
+                                        <li><a href="/project/showdata?name=SCALPLES">Scalples</a></li>
+                                        <li><a href="/project/showdata?name=SCISSORS">Scissors</a></li>
+                                        <li><a href="/project/showdata?name=STERILIZATION">Sterilization</a></li>
+                                        <li><a href="/project/showdata?name=SUTURE">Suture</a></li>
+                                        <li><a href="/project/showdata?name=TRACHEOTOMY">Tracheotomy</a></li>
+                                        <li><a href="/project/showdata?name=TROCARS">Trocars</a></li>
+                                        <li><a href="/project/showdata?name=UROLOGY">Urology</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">DENTAL INSTR. <span class="caret"></span></a>
+                            <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                                <div class="w3ls_vegetables">
+                                    <ul>
+                                        <li><a href="/project/showdata3?name=AMALGAM CARVER">AMALGAM CARVER</a></li>
+                                        <li><a href="/project/showdata3?name=AMALGAM CARRIERS">AMALGAM CARRIERS</a></li>
+                                        <li><a href="/project/showdata3?name=BONE RONGEURS">BONE RONGEURS</a></li>
+                                        <li><a href="/project/showdata3?name=BONE FILES">BONE FILES</a></li>
+                                        <li><a href="/project/showdata3?name=CROWN INSTRUMENTS">CROWN INSTRUMENTS</a></li>
+                                        <li><a href="/project/showdata3?name=COMBINATION EXPLORERS-PROBES">COMBINATION <br />EXPLORERS-PROBES</a></li>
+                                        <li><a href="/project/showdata3?name=CEMENT SPATULAS">CEMENT SPATULAS</a></li>
+                                        <li><a href="/project/showdata3?name=CAVITY PREPARATION INSTRUMENTS">CAVITY PREPARATION <br />INSTRUMENTS</a></li>
+                                        <li><a href="/project/showdata3?name=DENTAL SCISSORS">DENTAL SCISSORS</a></li>
+                                        <li><a href="/project/showdata3?name=DOUBLE ENDED">Double Ended</a></li>
+                                        <li><a href="/project/showdata3?name=EXTRACTING FORCEPS">Extracting Forceps</a></li>
+                                        <li><a href="/project/showdata3?name=EXPLORERS ANATOMIC HANDLE">Explorer Anatomic Handle</a></li>
+                                        <li><a href="/project/showdata3?name=EXPLORERS">explorers</a></li>
+                                        <li><a href="/project/showdata3?name=EXCAVATORS">Excavators</a></li>
+                                        <li><a href="/project/showdata3?name=ENDODONTIC INSTRUMENTS">Endodontic Instruments</a></li>
+                                        <li><a href="/project/showdata3?name=FILLING INSTRUMENTS">FILLING INSTRUMENTS</a></li>
+                                        <li><a href="/project/showdata3?name=GRACEY CURRETTERS">Gracey Curretters</a></li>
+                                        <li><a href="/project/showdata3?name=HEIDEMANN SPARATING SPATULAS">Heidemann Sparating<br /> Spatulas</a></li>
+                                        <li><a href="/project/showdata3?name=IMPLANT SURGERY">Implant Surgery</a></li>
+                                        <li><a href="/project/showdata3?name=LABORATIRY TWEEZERS">Laboratiry Tweezers</a></li>
+                                        <li><a href="/project/showdata3?name=LABORATIRY INSTRUMENTS">Laboratiry Instruments</a></li>
+                                        <li><a href="/project/showdata3?name=MATRIX RETAINERS">Matrix Retainers</a></li>
+                                        <li><a href="/project/showdata3?name=MATRIX RETAINERS">Needle Holders</a></li>
+                                        <li><a href="/project/showdata3?name=PLIERS">Pliers</a></li>
+                                        <li><a href="/project/showdata3?name=PLASTER ALGINATE & EEASTOMERSI">Plaster Alginate & <br />Eeastomersi</a></li>
+                                        <li><a href="/project/showdata3?name=MATRIX RETAINERS">Periodontial Pocket Probe</a></li>
+                                        <li><a href="/project/showdata3?name=MATRIX RETAINERS">Periodontal Instruments</a></li>
+                                        <li><a href="/project/showdata3?name=ROOT-TIP PICKS">Root-Tip Picks</a></li>
+                                        <li><a href="/project/showdata3?name=RUBBER DAM CLAMPS">Rubber Dam Clamps</a></li>
+                                        <li><a href="/project/showdata3?name=RETRACTORS">Retractors</a></li>
+                                        <li><a href="/project/showdata3?name=ROOT ELEVATORS">Root Elevators</a></li>
+                                        <li><a href="/project/showdata3?name=RETRACTORS - TONGUE DEPRESSORS">Retractors - Tongue<br /> Depressors</a></li>
+                                        <li><a href="/project/showdata3?name=SCALERS">Scalers</a></li>
+                                        <li><a href="/project/showdata3?name=SCALERS">Scalpe Handles</a></li>
+                                        <li><a href="/project/showdata3?name=SYRINGES">Syringes</a></li>
+                                        <li><a href="/project/showdata3?name=SURGICAL SALIVA EJECTORS">Surgical Saliva Ejectors</a></li>
+                                        <li><a href="/project/showdata3?name=RUBBER DAM CLAMPS">Saw & Blades</a></li>
+                                        <li><a href="/project/showdata3?name=TOWEL CLAMPS">Towel Clamps</a></li>
+                                        <li><a href="/project/showdata3?name=TRAYS">Trays</a></li>
+                                        <li><a href="/project/showdata3?name=WAX and MODELING CARVES">Wax & Modeling Carves</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
+                            <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                                <div class="w3ls_vegetables">
+                                    <ul>
+                                        <li><a href="/project/showdata2?name=CUTICLEE SCISSORS">CUTICLEE SCISSORS</a></li>
+                                        <li><a href="/project/showdata2?name=CUTTICLE NIPPER">Common scissors</a></li>
+                                        <li><a href="/project/showdata2?name=CUTTICLE NIPPER">cutticle nipper</a></li>
+                                        <li><a href="/project/showdata2?name=CUTTICLE NAIL SCISSORS">cutticle nail scissors</a></li>
+                                        <li><a href="/project/showdata2?name=HAIR CUTTING SCISSORS PVC COATED">Hair Cutting Scissors<br /> PVC coated</a></li>
+                                        <li><a href="/project/showdata2?name=NAIL AND FOOT FILE">nail and foot file</a></li>
+                                        <li><a href="/project/showdata2?name=NAIL AND FOOT FILE">nail artist tweezer</a></li>
+                                        <li><a href="/project/showdata2?name=PROFFESIONAL THINNING & BLENDING SHEARS">Proffesional Thinning & <br />Blending Shears</a></li>
+                                        <li><a href="/project/showdata2?name=PROFESSIONAL RAZOR SHARP SHEARS">Professional Razor <br />Sharp Shears</a></li>
+                                        <li><a href="/project/showdata2?name=SHAVING AND THINING RAZORS">shaving and thining razors</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="household.html">About Us</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        <div class="col-md-9">
+            <div class="top-brands">
+               
+
+
+                <div class="">
+                    <div class="row">
+
+
+
+                        <div class="well">
+                            <a href="/project/showdata?name=ANESTHESIA"><h3 class=" text-justify"><span class="glyphicon  glyphicon-arrow-right"></span> Surgical Instrument</h3></a>
+                            <div id="myCarousel3" class="carousel slide">
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <div class="row-fluid">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/foregger1433830190-11.jpg" alt="..." />
+                                                            <div class="caption">
+                                                                <h3>foregger</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+
+
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/guedel-negus1433829857-5.jpg" />
+                                                            <div class="caption">
+                                                                <h3>guedel-negus</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/guedel-negus1433829889-6.jpg" />
+                                                            <div class="caption">
+                                                                <h3>guedel-negus</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div><!--/row-fluid-->
+                                    </div><!--/item-->
+
+                                    <div class="item">
+                                        <div class="row-fluid">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/guedel-negus1433830103-7.jpg" />
+                                                            <div class="caption">
+                                                                <h3>guedel-negus</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/magill1433829710-1.jpg" />
+                                                            <div class="caption">
+                                                                <h3>magih</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/mcintosh1433830259-16.jpg" />
+                                                            <div class="caption">
+                                                                <h3>mcintosh</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--/row-fluid-->
+                                    </div><!--/item-->
+
+                                    <div class="item">
+                                        <div class="row-fluid">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/mcintosh1433830328-8.jpg" />
+                                                            <div class="caption">
+                                                                <h3>mcintosh</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/mcintosh1433830362-10.jpg" />
+                                                            <div class="caption">
+                                                                <h3>mcintosh</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="thumbnail">
+                                                            <img src="~/Images/SURGICAL_INSTRUMENTS/ANESTHESIA/mcintosh1433830386-14.jpg" />
+                                                            <div class="caption">
+                                                                <h3>mcintosh</h3>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--/row-fluid-->
+                                    </div><!--/item-->
+
+                                </div><!--/carousel-inner-->
+
+                                <a class="left carousel-control" href="#myCarousel3" data-slide="prev"></a>
+                                <a class="right carousel-control" href="#myCarousel3" data-slide="next"></a>
+                            </div><!--/myCarousel-->
+
+                        </div><!--/well-->
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="top-brands" >
+                <div class="">
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="well">
+                                <a href="/project/showdata3?name=AMALGAM%20CARVER"> <h3 class="text-justify"><span class="glyphicon  glyphicon-arrow-right"></span> Dental Instrument</h3></a>
+                                <div id="myCarousel2" class="carousel slide">
+
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+
+                                        <div class="item active">
+                                            <div class="row-fluid">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/AMALGAM CARRIERS/amalgam-carriers1438263902-15.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>amalgam-carriers</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/CROWN INSTRUMENTS/crown-instruments1438169533-15.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>crown-instruments</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/AMALGAM CARRIERS/metal-tip-for-1859-1860-18611438260789-9.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>metal-tip-for</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div><!--/row-fluid-->
+                                        </div><!--/item-->
+
+                                        <div class="item">
+                                            <div class="row-fluid">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/AMALGAM CARRIERS/metal-tip-for-1859-1860-18611438260870-10.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>metal-tip-for</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/AMALGAM CARRIERS/metal-tip-for-1859-1860-18611438263517-10.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>metal-tip-for</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/AMALGAM CARVER/amalgam-carver1438261161-1.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>amalgam-carver</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--/row-fluid-->
+                                        </div><!--/item-->
+
+                                        <div class="item">
+                                            <div class="row-fluid">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/BONE RONGEURS/mini-ruskin1438259464-10.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>mini-ruskin</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/BONE RONGEURS/goldman-fox1438259058-7.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>goldman-fox</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/DENTAL_INSTRUMENTS/BONE RONGEURS/goldmann-fox1436616071-293-13.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>goldmann-fox</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--/row-fluid-->
+                                        </div><!--/item-->
+
+                                    </div><!--/carousel-inner-->
+
+                                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev"></a>
+                                    <a class="right carousel-control" href="#myCarousel2" data-slide="next"></a>
+                                </div><!--/myCarousel-->
+
+                            </div><!--/well-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-brands">
+                <div class="">
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="well">
+                                <a href="/project/showdata2?name=CUTICLEE%20SCISSORS">  <h3 class="text-justify"><span class="glyphicon  glyphicon-arrow-right"></span> Beauty Instrument</h3></a>
+                                <div id="myCarousel4" class="carousel slide">
+
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+
+                                        <div class="item active">
+                                            <div class="row-fluid">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/CUTICLEE SCISSORS/cuticlee-scissors1433235411-P-1314.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>cuticlee-scissors</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/CUTICLEE SCISSORS/cuticle-nippers-1419075075-RB-7701.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>cuticle-nippers</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/CUTICLEE SCISSORS/cuticle-nippers-1419231468-RB-21-A.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>cuticle-nippers</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div><!--/row-fluid-->
+                                        </div><!--/item-->
+
+                                        <div class="item">
+                                            <div class="row-fluid">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/CUTTICLE NIPPER/cutticle-nipper10cm1435134976-P-1417 P-1418.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>cutticle-nipper</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/CUTTICLE NIPPER/cutticle-nipper10cm1435135401-P-1425 P-1426.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>cutticle-nipper</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/CUTTICLE NIPPER/cutticle-nipper-10cm1435297342-P-1456.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>cutticle-nipper</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--/row-fluid-->
+                                        </div><!--/item-->
+
+                                        <div class="item">
+                                            <div class="row-fluid">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/CUTTICLE NIPPER/cutticle-nipper10cm1435135479-P-1427 P-1428.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>cutticle-nipper</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+
+
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/HAIR CUTTING SCISSORS PVC COATED/hair-cutting-shears-1418721265-RB-221.jpg" />
+                                                                <div class="caption">
+                                                                    <h3>hair-cutting-shears</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="thumbnail">
+                                                                <img src="~/Images/BEAUTY_INSTRUMENT/HAIR CUTTING SCISSORS PVC COATED/hair-cutting-shears-1418721397-RB-221.jpg" />
+
+                                                                <div class="caption">
+                                                                    <h3>hair-cutting-shears</h3>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--/row-fluid-->
+                                        </div><!--/item-->
+
+                                    </div><!--/carousel-inner-->
+
+                                    <a class="left carousel-control" href="#myCarousel4" data-slide="prev"></a>
+                                    <a class="right carousel-control" href="#myCarousel4" data-slide="next"></a>
+                                </div><!--/myCarousel-->
+
+                            </div><!--/well-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- //banner -->
+    <!-- brands -->
+  
+    <!-- //brands -->
+    <!-- newsletter -->
+    <div class="newsletter">
+        <div class="container">
+            <div class="w3agile_newsletter_left">
+              
+            </div>
+            <div class="w3agile_newsletter_right">
+               
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //newsletter -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3 w3_footer_grid">
+                <h3>information</h3>
+                <ul class="w3_footer_grid_list">
+                    <li><a href="/Home/Index">Home</a></li>
+                    <li><a href="/Home/About">About Us</a></li>
+                    <li><a href="/Home/COntact">Contact</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>policy info</h3>
+                <ul class="w3_footer_grid_list">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="/Home/policy">privacy policy</a></li>
+                    <li><a href="/Home/terms">terms of use</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>what in stores</h3>
+                <ul class="w3_footer_grid_list">
+                    <li><a href="/project/showdata2?name=CUTICLEE SCISSORS">CUTICLEE SCISSORS</a></li>
+                    <li><a href="/project/showdata2?name=CUTTICLE NIPPER">cutticle nipper</a></li>
+                    <li><a href="/project/showdata2?name=NAIL AND FOOT FILE">nail artist tweezer</a></li>
+                    <li><a href="/project/showdata3?name=SCALERS">Scalers</a></li>
+                    <li><a href="/project/showdata?name=ANESTHESIA">Anesthesia</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>twitter posts</h3>
+               
+            </div>
+            <div class="clearfix"> </div>
+            <div class="agile_footer_grids">
+                <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+                    <div class="w3_footer_grid_bottom">
+                        <h4>100% secure payments</h4>
+                        <img src="images/card.png" alt=" " class="img-responsive" />
+                    </div>
+                </div>
+                <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+                    <div class="w3_footer_grid_bottom">
+                        <h5>connect with us</h5>
+                        <ul class="agileits_social_icons">
+                            <li><a href="https://web.facebook.com/alifaiz.bhattisahab" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="wthree_footer_copy">
+                <p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Content/layoutCheck/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <script src="~/Content/layoutCheck/js/minicart.js"></script>
+    <script>
+        paypal.minicart.render();
+
+        paypal.minicart.cart.on('checkout', function (evt) {
+            var items = this.items(),
+                len = items.length,
+                total = 0,
+                i;
+
+            // Count the number of each item in the cart
+            for (i = 0; i < len; i++) {
+                total += items[i].get('quantity');
+            }
+
+            if (total < 3) {
+                alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+                evt.preventDefault();
+            }
+        });
+
+    </script>
+</body>
+</html>
